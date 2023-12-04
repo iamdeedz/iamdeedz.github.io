@@ -1,4 +1,4 @@
-const pages = ["index", "history"];
+const pages = ["", "fact-file", "history"];
 const pathname_array = document.location.pathname.split("/");
 const current_page = pages.indexOf(pathname_array[pathname_array.length - 1].split(".")[0]);
 
@@ -16,5 +16,13 @@ function next_page() {
 
 function prev_page() {
     document.querySelector("body").classList.add("fade-out");
-    setTimeout('document.location = pages[current_page - 1] + ".html"', 1000);
+
+    // If the previous page is empty (is the index file), go to the root directory
+    if (pages[current_page - 1] == "") {
+        setTimeout('document.location = "."', 1000);
+    }
+
+    else {
+        setTimeout('document.location = pages[current_page - 1] + ".html"', 1000);
+    }
 }

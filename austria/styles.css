@@ -32,6 +32,12 @@
     color: #dbdbdb;
 }
 
+.links {
+    margin: auto;
+    display: flex;
+    width: 150px;
+}
+
 .link {
     color: aqua;
     cursor: pointer;
