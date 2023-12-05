@@ -1,4 +1,4 @@
-* {
+html {
     background-color: #333;
     font-family: "Nunito", sans-serif;
     overflow: hidden;
@@ -8,9 +8,39 @@
     text-align: center;
 
 }
-.main-content > ul {
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin-left: 10vw;
+    height: auto;
+}
+
+.section {
+    font-size: 25px;
+    color: #dbdbdb;
+}
+
+.section > ul {
     padding-left: 0;
     list-style-position: inside;
+}
+
+.first-slide {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.first-slide-title {
+    font-size: 200px;
+    font-weight: bold;
+    color: white;
 }
 
 .title {
@@ -27,23 +57,29 @@
     color: #ebebeb;
 }
 
-.main-content {
-    font-size: 25px;
-    color: #dbdbdb;
-}
-
 .links {
     margin: auto;
+    margin-top: 100px;
     display: flex;
-    width: 150px;
+    width: 200px;
+}
+
+.first-slide-link {
+    color: lightcoral;
+    cursor: pointer;
+    font-size: 60px;
+    display: block;
+    margin: auto;
+    width: fit-content;
 }
 
 .link {
     color: aqua;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 35px;
     display: block;
     margin: auto;
+    width: fit-content;
 }
 
 .fade-out {
