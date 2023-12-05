@@ -1,4 +1,4 @@
-const pages = ["", "fact-file", "history"];
+const pages = ["", "loc-fact", "history"];
 const pathname_array = document.location.pathname.split("/");
 const current_page = pages.indexOf(pathname_array[pathname_array.length - 1].split(".")[0]);
 
