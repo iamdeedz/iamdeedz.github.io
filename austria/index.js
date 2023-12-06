@@ -1,6 +1,19 @@
-const pages = ["", "loc-fact", "history"];
+console.log("View Width: " + window.innerWidth);
+console.log("View Height: " + window.innerHeight);
+
+const pages = ["", "loc-fact", "culture", "history"];
 const pathname_array = document.location.pathname.split("/");
 const current_page = pages.indexOf(pathname_array[pathname_array.length - 1].split(".")[0]);
+
+if (current_page == 1) {
+    const img = document.getElementById("europe-map");
+    img.style.width = 400 / 1879 * window.innerWidth + "px";
+    img.style.height = 400 / 1008 * window.innerHeight + "px";
+
+    if (window.innerWidth < 1755 || window.innerHeight < 973) {
+        img.style.display = "none";
+    }
+}
 
 document.addEventListener("DOMContentLoaded", load);
 
