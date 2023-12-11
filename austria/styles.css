@@ -1,22 +1,14 @@
 html {
     background-color: #333;
     font-family: "Nunito", sans-serif;
-    overflow: hidden;
 }
 
 .content {
     text-align: center;
 }
 
-#europe-map {
-    position: absolute;
-    top: 55%;
-    left: 10%;
-}
-
-.image > img {
-    max-width: 100%;
-    max-height: 95%;
+.image {
+    margin-top: 50px;
 }
 
 .caption {
@@ -42,6 +34,8 @@ html {
 
 .section > p {
     max-width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section > ul {
@@ -81,7 +75,8 @@ html {
 
 .links {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     width: 200px;
 }
@@ -105,6 +100,20 @@ html {
     margin: auto;
     width: fit-content;
 }
+
+#provinces {
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid #dbdbdb;
+    padding: 26.5px;
+}
+
+.table-img {
+    height: 100px;
+}
+
 
 .fade-out {
     animation: fade-out 1s;
