@@ -7,8 +7,16 @@ html {
     text-align: center;
 }
 
-.image {
+.image, .list-image {
     margin-top: 50px;
+}
+
+.image, .list-image img {
+    border-radius: 10px;
+}
+
+.list-image {
+    margin-bottom: 50px;
 }
 
 .caption {
@@ -32,9 +40,9 @@ html {
     color: #dbdbdb;
 }
 
-.section > p {
+.section * {
     max-width: 30vw;
-    
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -93,12 +101,25 @@ html {
 }
 
 .link {
-    color: aqua;
+    color: rgb(0, 183, 255);
     cursor: pointer;
     font-size: 35px;
     display: block;
     margin: auto;
     width: fit-content;
+}
+
+.link:hover {
+    color: aqua;
+}
+
+.link-mid-text {
+    color: rgb(0, 183, 255);
+    cursor: pointer;
+}
+
+.link-mid-text:hover {
+    color: aqua;
 }
 
 #provinces {
