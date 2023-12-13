@@ -11,8 +11,12 @@ html {
     margin-top: 50px;
 }
 
-.image, .list-image img {
+.image img, .list-image img {
     border-radius: 10px;
+}
+
+ul > li {
+    margin-bottom: 20px;
 }
 
 .list-image {
@@ -124,6 +128,7 @@ html {
 
 #provinces {
     border-collapse: collapse;
+    border-radius: 10px;
 }
 
 table td, table th {
