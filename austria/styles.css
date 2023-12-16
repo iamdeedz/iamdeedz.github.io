@@ -15,6 +15,20 @@ html {
     border-radius: 10px;
 }
 
+#multi-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin-left: 10vw;
+    height: auto;
+}
+
+#multi-img img {
+    max-width: 30vw;
+    max-height: 30vw;
+}
+
 ul > li {
     margin-bottom: 20px;
 }
@@ -63,9 +77,21 @@ ul > li {
     text-align: center;
 }
 
+.last-slide {
+    text-align: center;
+}
+
 .first-slide-title {
     margin-top: 5%;
     font-size: 200px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.last-slide-title {
+    margin-top: 5%;
+    font-size: 100px;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 2px #333;
@@ -83,6 +109,13 @@ ul > li {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     color: #ebebeb;
+}
+
+.last-slide-text {
+    font-size: 40px;
+    font-weight: 200;
+    color: #ebebeb;
+
 }
 
 .links {
