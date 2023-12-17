@@ -137,6 +137,11 @@ ul > li {
     width: fit-content;
 }
 
+#long {
+    margin-left: 15%;
+    max-width: 70%;
+}
+
 .link {
     color: rgb(0, 183, 255);
     cursor: pointer;
