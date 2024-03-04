@@ -1,7 +1,7 @@
 console.log("View Width: " + window.innerWidth);
 console.log("View Height: " + window.innerHeight);
 
-const pages = ["", "loc-fact", "provinces", "national-anthem", "food", "sports", "history", "WWII", "celebs", "fun-facts", "thanks"];
+const pages = ["", "early-life"];
 const pathname_array = document.location.pathname.split("/");
 const current_page = pages.indexOf(pathname_array[pathname_array.length - 1].split(".")[0]);
 

@@ -69,24 +69,29 @@ ul > li {
     list-style-position: inside;
 }
 
-.first-slide {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.first-slide, .last-slide {
     text-align: center;
 }
 
-.last-slide {
-    text-align: center;
+.first-slide-img {
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    width: 25%;
 }
 
 .first-slide-title {
+    float: right;
     margin-top: 5%;
-    font-size: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 150px;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 2px #333;
+    width: 30%;
 }
 
 .last-slide-title {
@@ -126,46 +131,36 @@ ul > li {
     width: 200px;
 }
 
-.first-slide-link {
-    color: red;
+.first-slide-link, .link, .link-mid-text {
+    color: rgb(0, 183, 255);
     cursor: pointer;
-    font-size: 60px;
+}
+
+.first-slide-link, .link {
+    color: rgb(0, 183, 255);
+    cursor: pointer;
     display: block;
+    width: fit-content;
+}
+
+.first-slide-link:hover, .link:hover, .link-mid-text:hover {
+    color: aqua;
+}
+
+.first-slide-link {
+    font-size: 60px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 12%;
-    width: fit-content;
+}
+
+.link {
+    font-size: 35px;
+    margin: auto;
 }
 
 #long {
     margin-left: 15%;
     max-width: 70%;
-}
-
-.link {
-    color: rgb(0, 183, 255);
-    cursor: pointer;
-    font-size: 35px;
-    display: block;
-    margin: auto;
-    width: fit-content;
-}
-
-.link:hover {
-    color: aqua;
-}
-
-.link-mid-text {
-    color: rgb(0, 183, 255);
-    cursor: pointer;
-}
-
-.link-mid-text:hover {
-    color: aqua;
-}
-
-#provinces {
-    border-collapse: collapse;
 }
 
 table td, table th {
@@ -175,11 +170,6 @@ table td, table th {
 
 .table-img {
     height: 100px;
-}
-
-#national-anthem {
-    width: 100%;
-    height: 100%;
 }
 
 .fade-out {
