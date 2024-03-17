@@ -1,7 +1,7 @@
 console.log("View Width: " + window.innerWidth);
 console.log("View Height: " + window.innerHeight);
 
-const pages = ["", "family-education", "later-years", "legacy"];
+const pages = ["", "family-education", "wwii-enigma", "later-years", "legacy", "reasoning"];
 const pathname_array = document.location.pathname.split("/");
 const current_page = pages.indexOf(pathname_array[pathname_array.length - 1].split(".")[0]);
 
