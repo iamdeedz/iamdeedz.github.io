@@ -29,6 +29,12 @@ html {
     max-height: 30vw;
 }
 
+#movie img {
+    margin-left: 25%;
+    max-width: 50%;
+    margin-right: 25%;
+}
+
 ul > li {
     margin-bottom: 20px;
 }
