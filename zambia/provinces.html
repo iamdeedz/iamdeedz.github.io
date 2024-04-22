@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <title>Austria!</title>
+</head>
+<body>
+    <div class="content">
+
+        <h1 class="title">Austria!</h1>
+
+        <div class="sections">
+
+            <div class="section"> 
+
+                <h3 class="subtitle">The Austrian Provinces</h3>
+
+                <p>
+                    Austria is split into 9 provinces. Each province has its own capital and flag.
+                </p>
+
+                <table id="provinces">
+                    <tr>
+                        <th>Province</th>
+                        <th>Capital</th>
+                        <th>Flag</th>
+                        <th>Population (Jan 2022)</th>
+                    </tr>
+
+                    <tr>
+                        <td>Burgenland</td>
+                        <td>Eisenstadt</td>
+                        <td><img class="table-img" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_Burgenland_%28state%29.svg" alt="Burgenland Flag"></td>
+                        <td>297,583</td>
+                    </tr>
+
+                    <tr>
+                        <td>Carinthia</td>
+                        <td>Klagenfurt</td>
+                        <td><img class="table-img" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Carinthia_%28state%29.svg" alt="Carinthia Flag"></td>
+                        <td>564,513</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lower Austria</td>
+                        <td>Sankt Pölten</td>
+                        <td><img class="table-img" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Lower_Austria_%28state%29.svg" alt="Lower Austria Flag"></td>
+                        <td>1,698,796</td>
+                    </tr>
+
+                    <tr>
+                        <td>Salzburg</td>
+                        <td>Salzburg</td>
+                        <td><img class="table-img" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_of_Salzburg_%28state%29.svg" alt="Salzburg Flag"></td>
+                        <td>560,710</td>
+                    </tr>
+
+                    <tr>
+                        <td>Styria</td>
+                        <td>Graz</td>
+                        <td><img class="table-img" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Flag_of_Styria_%28state%29.svg" alt="Styria Flag"></td>
+                        <td>1,252,922</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tyrol</td>
+                        <td>Innsbruck</td>
+                        <td><img class="table-img" src="https://upload.wikimedia.org/wikipedia/commons/2/25/Flag_of_Tirol_%28state%29.svg" alt="Tyrol Flag"></td>
+                        <td>764,102</td>
+                    </tr>
+
+                    <tr>
+                        <td>Upper Austria</td>
+                        <td>Linz</td>
+                        <td><img class="table-img" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Flag_of_Upper_Austria_%28state%29.svg" alt="Upper Austria Flag"></td>
+                        <td>1,505,140</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vienna</td>
+                        <td>Vienna</td>
+                        <td><img class="table-img" src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Vienna_%28state%29.svg" alt="Vienna Flag"></td>
+                        <td>1,931,593</td>
+
+                    <tr>
+                        <td>Vorarlberg</td>
+                        <td>Bregenz</td>
+                        <td><img class="table-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_Vorarlberg_%28state%29.svg" alt="Vorarlberg Flag"></td>
+                        <td>401,647</td>
+                    </tr>
+
+                </table>
+
+                <p>
+                    Despite being the smallest province (415 square kilometres), Vienna is the most populated province in Austria. Because of these two factors, it also has the highest population density at 4,654 people per square kilometre.
+                </p>
+                
+            </div>
+
+        </div>       
+        
+        <div class="links">
+            <a onclick="prev_page()" class="link" id="prev">Prev</a>
+            <a onclick="next_page()" class="link" id="next">Next</a>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
