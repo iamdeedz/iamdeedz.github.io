@@ -70,11 +70,10 @@ ul > li {
 }
 
 .first-slide {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Zambia.svg/800px-Flag_of_Zambia.svg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    text-align: center;
 }
 
 .last-slide {
@@ -83,6 +82,7 @@ ul > li {
 
 .first-slide-title {
     margin-top: 5%;
+    margin-left: 20%;
     font-size: 200px;
     font-weight: bold;
     color: white;
@@ -127,12 +127,11 @@ ul > li {
 }
 
 .first-slide-link {
-    color: red;
+    color: white;
     cursor: pointer;
     font-size: 60px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 35%;
     margin-top: 12%;
     width: fit-content;
 }
