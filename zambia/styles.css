@@ -46,6 +46,7 @@ ul > li {
 .sections {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 80vw;
     margin-left: 10vw;
@@ -111,12 +112,6 @@ ul > li {
     color: #ebebeb;
 }
 
-.source-subtitle {
-    margin-block-start: 0%;
-    margin-block-end: 0%;
-    margin-bottom: 5%;
-}
-
 .last-slide-text {
     font-size: 40px;
     font-weight: 200;
@@ -130,10 +125,6 @@ ul > li {
     margin-bottom: 50px;
     display: flex;
     width: 200px;
-}
-
-#source-links {
-    width: 250px;
 }
 
 .first-slide-link {
@@ -173,20 +164,6 @@ ul > li {
     color: aqua;
 }
 
-.source {
-    color: rgb(32, 99, 126);
-    cursor: pointer;
-    font-size: 25px;
-}
-
-.source:hover {
-    color: rgb(0, 183, 255);
-}
-
-.source-section {
-    width: 40vw;
-}
-
 #provinces {
     border-collapse: collapse;
 }
@@ -214,6 +191,31 @@ table td, table th {
     text-align: center;
     font-size: 20px;
     color: #dbdbdb;
+}
+
+.source {
+    color: rgb(32, 99, 126);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.source:hover {
+    color: rgb(0, 183, 255);
+}
+
+.source-section {
+    width: 40vw;
+    margin-bottom: 75px;
+}
+
+#source-links {
+    width: 250px;
+}
+
+.source-subtitle {
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin-bottom: 2.5%;
 }
 
 @keyframes fade-out {
