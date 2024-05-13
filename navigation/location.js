@@ -1,4 +1,5 @@
 var lat_long = document.getElementById("lat_long");
+var address = document.getElementById("addr");
 var lat;
 var long;
 var prev_lat;
@@ -22,6 +23,13 @@ function success(data) {
     + lat
     + "<br>Longitude: "
     + long;
+    const reverseGeocodingUrl = "https://api.geoapify.com/v1/geocode/reverse?lat=" + lat + "&lon=" + long + "&apiKey=8e30ef8a19f04b3eb34988e2353a12ac";
+  
+    // call Reverse Geocoding API - https://www.geoapify.com/reverse-geocoding-api/
+    fetch(reverseGeocodingUrl).then(result => result.json())
+    .then(featureCollection => {
+        address.innerHTML = "Address: " + featureCollection.features[0].properties.formatted;
+    });
 }
 
 var socket = new WebSocket("ws://localhost:1300/");
