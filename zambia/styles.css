@@ -218,6 +218,10 @@ table td, table th {
     margin-bottom: 2.5%;
 }
 
+.source-subtitle:hover {
+    color: rgb(0, 183, 255);
+}
+
 @keyframes fade-out {
     0% {
         opacity: 1;
