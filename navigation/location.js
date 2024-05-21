@@ -1,5 +1,7 @@
 var lat_long = document.getElementById("lat_long");
-var address = document.getElementById("addr");
+var address = document.getElementById("address");
+var direction = document.getElementById("direction");
+var distance = document.getElementById("distance");
 var lat;
 var long;
 var prev_lat;
@@ -8,6 +10,12 @@ const options = {
     enableHighAccuracy: true,
     maximumAge: 30000,
     timeout: 27000,
+};
+const directions = {
+    0: "Forward",
+    1: "Right",
+    2: "Backward",
+    3: "Left"
 };
 
 const watchID = navigator.geolocation.watchPosition(success, error, options);
@@ -39,7 +47,16 @@ socket.onopen = function (e) {
 };
 
 socket.onmessage = function (e) {
-    console.log(e.data);
+    const msg = JSON.parse(e.data);
+    console.log(msg);
+    switch (msg.type) {
+        case "movement":
+            direction.innerHTML = "Direction: " + directions[msg.message.direction];
+            distance.innerHTML = "Distance: " + msg.message.distance + " meters";
+            break;
+        default:
+            console.log("Unknown message type: " + msg.type);
+    }
 };
 
 socket.onerror = function (e) {
@@ -54,9 +71,11 @@ socket.onclose = function (e) {
 function sendLocation() {
     // If the location is undefined then send "loading..."
     if (lat == undefined || long == undefined) {
-        socket.send("loading...");
+        const msg = JSON.stringify({"type": "loading"});
+        socket.send(msg);
     }
 
+    /*
     // If lat or long is negative then make it positive to compare
     if (Math.sign(lat) == -1) {
         var temp_lat = -lat;
@@ -74,10 +93,20 @@ function sendLocation() {
     if (prev_lat <= temp_lat <= prev_lat + 0.001 || prev_long <= temp_long <= prev_long + 0.001) {
         return;
     }
+    */
 
     // If the user has moved then send the new location
     if (lat != prev_lat || long != prev_long) {
-        socket.send(lat + " " + long);
+        const msg = JSON.stringify(
+            {
+                "type": "location",
+                "message": {
+                    "latitude": lat,
+                    "longitude": long
+                }
+            }
+        );
+        socket.send(msg);
     }
 
     // Update the previous location
