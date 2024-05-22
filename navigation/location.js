@@ -64,7 +64,8 @@ socket.onerror = function (e) {
 }
 
 socket.onclose = function (e) {
-    console.log("Disconnected");
+    direction.innerHTML = "Disconnected to Websocket Server";
+    distance.innerHTML = "Disconnected to Websocket Server";
 };
 
 
