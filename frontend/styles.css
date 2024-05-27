@@ -28,6 +28,17 @@
     border-radius: 50%;
 }
 
+/* Body */
+
+.main > p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.main > p > a {
+    color: #FEFAFF;
+}
+
 /* Animations */
 
 @keyframes load {
